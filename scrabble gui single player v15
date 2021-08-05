@@ -38,16 +38,16 @@ c_tiles = [0,3,7,11,14,16,20,24,28,32,36,38,42,45,48,52,56,59,64,70,76,80,84,88,
 #shows a messagebox with the rules
 def rules():
     tk.messagebox.askokcancel(title="Scrabble Rules", message="""
-    Welcome to the single player version of pyScrabble!
+    Welcome to pyScrabble!
     The rules are very similar to traditional Scrabble. You are randomly assigned a series of letters from a virtual bag. Each letter has a point score attached to it, roughly corresponding to how commonly it is used in English. To get these juicy points added to your score, simply make a valid word using that letter.
     A valid word is one that is found in our dictionary, which allows for both British and American spellings of most English words.
     Click on the letter you want to use, then click on the board where you want to place it. Once you click on a letter, it becomes disabled, so it's best to plan your word first.
     There are coloured tiles which, depending on their colour, will multiply either the total score of the word or the individual letter if your word/letter is placed on top of it.
     Once you've finished your word, click "Next Turn". If you are successful, your points will be added. Otherwise you will get a message telling you the word is invalid. You will have another chance, but three wrong words in a row will end the game :(
-    Alternatively, if you don't think you see any word, you can press "Skip Turn", which will put your letters back in the bag and give you new ones. If you skip twice in a row, the game will also end.
+    Alternatively, if you don't think you see any words, you can press "Skip Turn", which will put your letters back in the bag and give you new ones. You can't skip more than one time in a row.
     Also, there is a small selection of bonus words, which will give you even more points. These words are secret (unless you cheat) and are broadly related to computer science. Generally, abbreviations and acronyms do not count as valid words, except for a few of these bonus words.
     You can only make one word at a time, and if you make multiple words (by connecting words for example), the highest scoring valid word will be taken.
-    At the end of the game, which will either be when the bag runs out of letters or when you click "End Game", your score may be added to the High Score Board if you did well enough.
+    At the end of the game, which you can bring on if you click "End Game", your score may be added to the High Score Board if you did well enough.
      Depending on how you acquired this game, you may have a text file that stores these scores, called "scrabble_hi_scores.txt". If not, you can simply create a file with this name, in the same directory as this game, to enable this feature.
      There are still bugs here and there but it's very playable!
      Good luck! 😉👍
